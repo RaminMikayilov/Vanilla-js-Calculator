@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.calculator-header {
+    min-height: 120px;
+    width: 410px;
+    background: linear-gradient(to right, #673ab7, #512da8);
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: 1px solid #aaa;
+}
+
+.calculator-header .prev-operand {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.3rem;
+}
+
+.calculator-header .current-operand {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.calculator-body {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: repeat(5, 90px);
+    padding: 10px;
+    background: linear-gradient(to right, #673ab7, #512da8);
+    border-radius: 0 0 10px 10px;
+}
+
+.two-span {
+    grid-column: span 2;
+    font-size: 1.7rem;
+}
+
+.two-span:first-child {
+    background-color: rgba(255, 0, 0, 0.9);
+    color: #fff;
+    border: 3px solid #aaa;
+}
+
+.two-span:first-child:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+.two-span:last-child {
+    background-color: rgba(0, 255, 0, 0.9);
+    color: #fff;
+}
+
+.two-span:last-child:hover {
+    background-color: rgba(0, 255, 0, 0.7);
+}
+
+.calculator-body button {
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    border: 3px solid #f00;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.2s ease-in-out;
+}
+
+.calculator-body button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 500px) {
+    * {
+        font-size: 1rem;
+    }
+
+    .calculator-header {
+        width: 330px;
+    }
+
+    .calculator-body {
+        grid-template-columns: repeat(4, 70px);
+        grid-template-rows: repeat(5, 70px);
+    }
+}
