@@ -26,7 +26,12 @@ class Calculator {
   }
 
   appendNumber(number) {
-    if (number === "." && this.currentOperand.includes(".") && this.currentOperand.length > 15) return;
+    if (
+      number === "." &&
+      this.currentOperand.includes(".") &&
+      this.currentOperand.length > 15
+    )
+      return;
     this.currentOperand = this.currentOperand.toString() + number.toString();
   }
 
@@ -62,6 +67,11 @@ class Calculator {
       default:
         return;
     }
+
+    let length = result.toString().length;
+    let newResult = length > 15 ? result.toString().slice(0, 15) : result;
+    result = parseFloat(newResult);
+
     this.currentOperand = result;
     this.prevOperand = "";
     this.operation = undefined;
