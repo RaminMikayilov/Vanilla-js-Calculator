@@ -13,6 +13,14 @@ Alternatively, you can also access the live demo of the app [here](https://rm-va
 
 To perform an arithmetic operation, simply click on the corresponding button on the calculator interface. For example, to add two numbers, enter the first number, click the addition button, enter the second number, and click the equal button to get the result. The result will be displayed on the calculator interface.
 
+## Technologies Used
+
+This application was built using:
+
+- HTML
+- CSS
+- JavaScript
+
 ## Contributing
 
 If you'd like to contribute to this project, please follow these steps:
