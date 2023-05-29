@@ -2,6 +2,8 @@
 
 This is a simple calculator app that can perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
+![screenshot](./images/screenshot.png)
+
 ## Installation
 
 To use this app, simply download or clone the repository to your local machine and open the index.html file in your web browser.
